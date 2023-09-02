@@ -3,7 +3,7 @@ const findSum = ([2, 4, 6]);
 const sum = findSum.reduce(function(sum, number){
     return sum + number;
 }, 0);
-};
+
 
 const findFrequency = function(array) {
   // your code here - don't forget to return an object!
