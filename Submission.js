@@ -1,8 +1,16 @@
 const findSum = ([2, 4, 6]);
-
-const sum = findSum.reduce(function(sum, number){
+const sum = findSum.reduce(function(sum, number) {
     return sum + number;
 }, 0);
+
+Array.prototype.myReduce = function (callback, accumulator) {
+    for (const i = 0; i < this.length; i++){
+        const element = this[i];
+
+        accumulator = callback(accumulator, element);
+    }
+   return accumulator;
+    };
 
 
 const findFrequency = function(array) {
