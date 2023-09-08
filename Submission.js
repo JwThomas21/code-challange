@@ -17,9 +17,24 @@ const findFrequency = function(array) {
   // your code here - don't forget to return an object!
 };
 
-const isPalindrome = function(str) {
-  // your code here - don't forget to return a boolean!
-};
+
+function isPalindrome(str) {
+    var reversed = str.split("").reverse().join("");
+    if (reversed === str) return true;
+
+    return false;
+}
+
+isPalindrome("canal");
+
+function isPalindrome(str) {
+    var str = str.toLowerCase();
+    var reversed = str.split("").reverse().join("");
+    if (reversed === str) return true;
+
+    return false;
+}
+isPalindrome("Ana");
 
 const largestPair = function(array) {
   // your code here - don't forget to return a number!
