@@ -41,8 +41,14 @@ const largestPair = function(array) {
 };
 
 const removeParenth = function(str) {
-  // your code here - don't forget to return a string!
+   const openIndex = str.indexOf('(');
+   const closeIndex = str.indexOf(')');
+const originalString = str.slice(0, openIndex);
+    const splicedString = str.slice(closeIndex + 1);
+    return originalString + splicedString;
 };
+ removeParenth('ido(not)liketocode');
+
 
 const scoreScrabble = function(str) {
   // your code here - don't forget to return a number!
