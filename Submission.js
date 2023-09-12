@@ -36,7 +36,11 @@ function isPalindrome(str) {
 
 
 const largestPair = function(array) {
-  // your code here - don't forget to return a number!
+  var max=-Infinity;  
+  for (var i=0;i<arr.length-1;i++){
+      max = arr[i]*arr[i+1]>max ?arr[i]*arr[i+1]:max;
+  }
+  return max;
 };
 
 const removeParenth = function(str) {
