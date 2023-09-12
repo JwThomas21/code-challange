@@ -1,4 +1,4 @@
-const findSum = ([2, 4, 6]);
+const findSum = (sum);
 const sum = findSum.reduce(function(sum, number) {
     return sum + number;
 }, 0);
@@ -25,7 +25,6 @@ function isPalindrome(str) {
     return false;
 }
 
-isPalindrome("canal");
 
 function isPalindrome(str) {
     var str = str.toLowerCase();
@@ -34,7 +33,7 @@ function isPalindrome(str) {
 
     return false;
 }
-isPalindrome("Ana");
+
 
 const largestPair = function(array) {
   // your code here - don't forget to return a number!
@@ -47,7 +46,6 @@ const originalString = str.slice(0, openIndex);
     const splicedString = str.slice(closeIndex + 1);
     return originalString + splicedString;
 };
- removeParenth('ido(not)liketocode');
 
 
 const scoreScrabble = function(str) {
