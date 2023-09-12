@@ -1,29 +1,30 @@
-const findSum = (sum);
-const sum = findSum.reduce(function(sum, number) {
-    return sum + number;
-}, 0);
-
-Array.prototype.myReduce = function (callback, accumulator) {
-    for (const i = 0; i < this.length; i++){
-        const element = this[i];
-
-        accumulator = callback(accumulator, element);
+const findSum = function(array) {
+    if (numbers.length === 0) {
+        return 0;
     }
-   return accumulator;
-    };
+    return numbers.reduce((sum, num) => sum = num, 0);
+}
 
 
 const findFrequency = function(array) {
-  // your code here - don't forget to return an object!
-};
-
-
-function isPalindrome(str) {
-    var reversed = str.split("").reverse().join("");
-    if (reversed === str) return true;
-
-    return false;
+  if (array.length === 0) {
+      return {most: undefined, least: undefined};
 }
+    const frequencyMap = {0};
+    let most = array[0];
+    let least = array[0];
+
+    array.forEach((arr) => {
+        frequencyMap[arr] = (frequencyMap[arr] || 0) + 1; 
+            if (frequencyMap[arr] < frequencyMap[least]) {
+                most = arr;
+            }
+        if (frequencyMap{arr} > frequencyMap[least]) {
+        least = arr;
+    }
+});
+return {most: most, least: least};
+            
 
 
 function isPalindrome(str) {
@@ -33,7 +34,6 @@ function isPalindrome(str) {
 
     return false;
 }
-
 
 const largestPair = function(array) {
   var max=-Infinity;  
