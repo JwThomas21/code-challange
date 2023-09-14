@@ -53,5 +53,13 @@ const originalString = str.slice(0, openIndex);
 
 
 const scoreScrabble = function(str) {
-  // your code here - don't forget to return a number!
-};
+ let scores = [1,3,3,2,1,4,2,4,1,8,5,1,3,1,1,3,10,1,1,1,1,4,4,8,4,10];
+    let score = 0
+    str = str.toUpperCase();
+    for (let i = 0; i < str.length; i++) {
+        const n = str.charCodeAt(i) - 65;
+       if (n < 0 || n > 25) continue;
+        score += scores[n];
+    }
+    return score;
+}
