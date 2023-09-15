@@ -5,26 +5,31 @@ const findSum = function(array) {
     return array.reduce((sum, num) => sum = num, 0);
 }
 
+                  const findFrequency = function (array) {
+                     
+            const map = {};
+            let most = array[0];
+            let least = array[0];
+          
+            array.forEach((arr) => {
+              map[arr] = (map[arr] || 0) + 1;
+          
+              if (map[arr] > map[most]) {
+                mostFrequent = arr;
+              }
+          
+              if (map[arr] < map[least]) {
+                leastFrequent = arr;
+              }
+            });
+          
+            return { most: most, least: least };
+          }
 
-const findFrequency = function(array) {
-  if (array.length === 0) {
-      return {most: undefined, least: undefined};
-}
-    const frequentMap = {};
-    let most = array[0];
-    let least = array[0];
+                
+    
 
-    array.forEach((arr) => {
-        frequentMap[arr] = (frequentMap[arr] || 0) + 1; 
-            if (frequentMap[arr] < frequentMap[least]) {
-                most = arr;
-            }
-        if (frequentMap{arr} > frequentMap[least]) {
-        least = arr;
-    }
-});
-return {most: most, least: least};
-}
+
             
 
 
