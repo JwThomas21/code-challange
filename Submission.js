@@ -10,20 +10,21 @@ const findFrequency = function(array) {
   if (array.length === 0) {
       return {most: undefined, least: undefined};
 }
-    const frequencyMap = {};
+    const frequentMap = {};
     let most = array[0];
     let least = array[0];
 
     array.forEach((arr) => {
-        frequencyMap[arr] = (frequencyMap[arr] || 0) + 1; 
-            if (frequencyMap[arr] < frequencyMap[least]) {
+        frequentMap[arr] = (frequentMap[arr] || 0) + 1; 
+            if (frequentMap[arr] < frequentMap[least]) {
                 most = arr;
             }
-        if (frequencyMap{arr} > frequencyMap[least]) {
+        if (frequentMap{arr} > frequentMap[least]) {
         least = arr;
     }
 });
 return {most: most, least: least};
+}
             
 
 
