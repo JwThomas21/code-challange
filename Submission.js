@@ -10,7 +10,7 @@ const findFrequency = function(array) {
   if (array.length === 0) {
       return {most: undefined, least: undefined};
 }
-    const frequencyMap = {0};
+    const frequencyMap = {};
     let most = array[0];
     let least = array[0];
 
@@ -37,8 +37,8 @@ function isPalindrome(str) {
 
 const largestPair = function(array) {
   var max=-Infinity;  
-  for (var i=0;i<arr.length-1;i++){
-      max = arr[i]*arr[i+1]>max ?arr[i]*arr[i+1]:max;
+  for (var i=0;i<array.length-1;i++){
+      max = array[i]*array[i+1]>max ?array[i]*array[i+1]:max;
   }
   return max;
 };
