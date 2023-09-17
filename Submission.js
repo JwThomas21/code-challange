@@ -3,7 +3,7 @@ const findSum = function(array) {
         return 0;
     }
     return array.reduce((sum, num) => sum = num, 0);
-}
+};
 
 const findFrequency = function (array) {
                      
@@ -17,14 +17,13 @@ map[arr] = (map[arr] || 0) + 1;
 if (map[arr] > map[most]) {
  mostFrequent = arr;
  }
-          
- if (map[arr] < map[least]) {
+    if (map[arr] < map[least]) {
 leastFrequent = arr;
  }
 });
           
 return { most: most, least: least };
-}
+};
 
                 
     function isPalindrome(str) {
@@ -33,7 +32,7 @@ return { most: most, least: least };
     if (reversed === str) return true;
 
     return false;
-}
+};
 
 const largestPair = function(array) {
   var max=-Infinity;  
@@ -62,4 +61,4 @@ const scoreScrabble = function(str) {
         score += scores[n];
     }
     return score;
-}
+};
