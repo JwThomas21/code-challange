@@ -5,26 +5,26 @@ const findSum = function(array) {
     return array.reduce((sum, num) => sum = num, 0);
 }
 
-                  const findFrequency = function (array) {
+const findFrequency = function (array) {
                      
-            const map = {};
-            let most = array[0];
-            let least = array[0];
+ const map = {};
+ let most = array[0];
+ let least = array[0];
           
-            array.forEach((arr) => {
-              map[arr] = (map[arr] || 0) + 1;
+array.forEach((arr) => {
+map[arr] = (map[arr] || 0) + 1;
           
-              if (map[arr] > map[most]) {
-                mostFrequent = arr;
-              }
+if (map[arr] > map[most]) {
+ mostFrequent = arr;
+ }
           
-              if (map[arr] < map[least]) {
-                leastFrequent = arr;
-              }
-            });
+ if (map[arr] < map[least]) {
+leastFrequent = arr;
+ }
+});
           
-            return { most: most, least: least };
-          }
+return { most: most, least: least };
+}
 
                 
     function isPalindrome(str) {
