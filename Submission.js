@@ -6,15 +6,14 @@ const findSum = function(array) {
 };
 
 const findFrequency = function (array) {
-                     
- const map = {};
- let most = array[0];
- let least = array[0];
+const map = {};
+     let most = array[0];
+     let least = array[0];
           
 array.forEach((arr) => {
 map[arr] = (map[arr] || 0) + 1;
           
-if (map[arr] > map[most]) {
+    if (map[arr] > map[most]) {
  mostFrequent = arr;
  }
     if (map[arr] < map[least]) {
@@ -26,12 +25,12 @@ return { most: most, least: least };
 };
 
                 
-    function isPalindrome(str) {
-    var str = str.toLowerCase();
-    var reversed = str.split("").reverse().join("");
-    if (reversed === str) return true;
+function isPalindrome(str) {
+var str = str.toLowerCase();
+var reversed = str.split("").reverse().join("");
+if (reversed === str) return true;
 
-    return false;
+ return false;
 };
 
 const largestPair = function(array) {
