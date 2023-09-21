@@ -26,7 +26,7 @@ return { most: most, least: least };
 };
 
                 
-function isPalindrome(str) {
+const isPalindrome = function(str) {
 var str = str.toLowerCase();
 var reversed = str.split("").reverse().join("");
 if (reversed === str) return true;
