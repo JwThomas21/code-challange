@@ -6,30 +6,28 @@ const findSum = function(array) {
 return sum;
 }
 
+
 const findFrequency = function (array) {
 const map = {};
      let most = array[0];
      let least = array[0];
-          
 array.forEach((arr) => {
 map[arr] = (map[arr] || 0) + 1;
-          
-    if (map[arr] > map[most]) {
+ if (map[arr] > map[most]) {
  mostFrequent = arr;
  }
     if (map[arr] < map[least]) {
 leastFrequent = arr;
  }
 });
-          
-return { most: most, least: least };
+    return { most: most, least: least };
 };
 
                 
 const isPalindrome = function(str) {
 var str = str.toLowerCase();
 var reversed = str.split("").reverse().join("");
-if (reversed === str) return true;
+     if (reversed === str) return true;
 
  return false;
 };
