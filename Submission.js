@@ -6,22 +6,40 @@ const findSum = function(array) {
 return sum;
 }
 
-
 const findFrequency = function (array) {
 const map = {};
      let most = array[0];
      let least = array[0];
 array.forEach((arr) => {
-map[arr] = (map[arr] || 0) + 1;
- if (map[arr] > map[most]) {
- mostFrequent = arr;
- }
-    if (map[arr] < map[least]) {
-leastFrequent = arr;
- }
-});
-    return { most: most, least: least };
+map[arr] = (map[arr] || 0);
+
+for(let i = 1 ;i < arr.length; i++){
+    if(arr[i] > most){
+        most = arr[i];}
+}
+ for(let i = 1 ;i < arr.length; i++){
+    if(arr[i] < least){
+        least = arr[i];}}
+}
+{
+ return { most: most, least: least };
 };
+
+// const findFrequency = function (array) {
+// const map = {};
+//      let most = array[0];
+//      let least = array[0];
+// array.forEach((arr) => {
+// map[arr] = (map[arr] || 0) + 1;
+//  if (map[arr] > map[most]) {
+//  mostFrequent = arr;
+//  }
+//     if (map[arr] < map[least]) {
+// leastFrequent = arr;
+//  }
+// });
+//     return { most: most, least: least };
+// };
 
                 
 const isPalindrome = function(str) {
