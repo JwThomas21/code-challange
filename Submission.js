@@ -6,7 +6,7 @@ const findSum = function(array) {
 return sum;
 }
 
-const findFrequency = function (array) {
+const findFrequency = function(array) {
     if (array.length === 0) {
       return { most: null, least: null };  
     }
@@ -20,7 +20,7 @@ const findFrequency = function (array) {
       if (map[item] > map[most]) {
         most = item;
       }
-  if (map[item] < map[least]) {
+      if (map[item] < map[least]) {
         least = item;
       }
     });
