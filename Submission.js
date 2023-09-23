@@ -10,7 +10,6 @@ const findFrequency = function (array) {
     if (array.length === 0) {
       return { most: null, least: null };  
     }
-  
     const map = {};
     let most = array[0];
     let least = array[0];  
@@ -21,15 +20,14 @@ const findFrequency = function (array) {
       if (map[item] > map[most]) {
         most = item;
       }
-  
-      if (map[item] < map[least]) {
+  if (map[item] < map[least]) {
         least = item;
       }
     });
   
     return { most: most, least: least };
   };
-
+  
                 
 const isPalindrome = function(str) {
 var str = str.toLowerCase();
