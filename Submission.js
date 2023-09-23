@@ -24,8 +24,7 @@ const findFrequency = function (array) {
         least = item;
       }
     });
-  
-    return { most: most, least: least };
+   return { most: most, least: least };
   };
   
                 
