@@ -8,12 +8,12 @@ return sum;
 
 const findFrequency = function (array) {
     if (array.length === 0) {
-      return { most: null, least: null };  // Handle empty array
+      return { most: null, least: null };  
     }
   
     const map = {};
     let most = array[0];
-    let least = array[0];  // Initialize least to the second element
+    let least = array[0];  
   
     array.forEach((item) => {
       map[item] = (map[item] || 0) + 1;
