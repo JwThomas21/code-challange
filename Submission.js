@@ -7,24 +7,28 @@ return sum;
 }
 
 const findFrequency = function (array) {
-  const map = {};
-  let most = array[0];
-  let least = array[0];
-
-  array.forEach((item) => {
-    map[item] = (map[item] || 0) + 1;
-
-    if (map[item] > map[most]) {
-      most = item;
+    if (array.length === 0) {
+      return { most: null, least: null };  // Handle empty array
     }
-
-    if (map[item] < map[least]) {
-      least = item;
-    }
-  });
-
-  return { most: most, least: least };
-};
+  
+    const map = {};
+    let most = array[0];
+    let least = array[0];  // Initialize least to the second element
+  
+    array.forEach((item) => {
+      map[item] = (map[item] || 0) + 1;
+  
+      if (map[item] > map[most]) {
+        most = item;
+      }
+  
+      if (map[item] < map[least]) {
+        least = item;
+      }
+    });
+  
+    return { most: most, least: least };
+  };
 
                 
 const isPalindrome = function(str) {
