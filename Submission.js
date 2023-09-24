@@ -11,7 +11,7 @@ const findFrequency = function(array) {
       return { most: null, least: null };  
     }
     const map = {};
-    let most = array[1];
+    let most = array[0];
     let least = array[1];  
   
     array.forEach((item) => {
